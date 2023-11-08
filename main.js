@@ -6,8 +6,21 @@ document
     const b = parseFloat(document.getElementById("b").value);
     const c = parseFloat(document.getElementById("c").value);
 
-    if (isNaN(a) || isNaN(b) || isNaN(c)) {
-      document.getElementById("result").innerText = "Vui lòng chỉ nhập số.";
+    if (isNaN(a)) {
+      document.getElementById("result").innerText =
+        "Vui lòng nhập vào một giá trị số hợp lệ cho a.";
+      return;
+    }
+
+    if (isNaN(b)) {
+      document.getElementById("result").innerText =
+        "Vui lòng nhập vào một giá trị số hợp lệ cho b.";
+      return;
+    }
+
+    if (isNaN(c)) {
+      document.getElementById("result").innerText =
+        "Vui lòng nhập vào một giá trị số hợp lệ cho c.";
       return;
     }
 
