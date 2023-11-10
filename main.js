@@ -24,6 +24,12 @@ document
       return;
     }
 
+    if (a === 0) {
+      document.getElementById("result").innerText =
+        "Đây không phải là phương trình bậc hai.";
+      return;
+    }
+
     const delta = b * b - 4 * a * c;
     let result;
 
